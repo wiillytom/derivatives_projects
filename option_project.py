@@ -561,19 +561,19 @@ with option_ss:
 
 strategies = [
    'Custom',
-   'Covered Call', #Long UL, Short 1 OTM call
-   'Protective Put', #Long UL, Long 1 OTM put
-   'Call Spread', #Long 1 Call ITM, short 1 call OTM
-   'Put Spread', #Long 1 Put ITM, short 1 call OTM
-   'Box Spread', #Long 1 Call Spread (K1,K2), Long 1 Put Spread (same K1,K2)
-   'Butterfly Spread (Calls)', #Long 1 Call K1, Short 2 Call K2, Long 1 Call K3
-   'Butterfly Spread (Puts)', #Long 1 Put K1, Short 2 Put K2, Long 1 Put K3
-   'Calendar Spread (Calls)', #Short 1 Call K with T1, Long 1 Call K with T2
-   'Calendar Spread (Puts)', #Short 1 Put K with T1, Long 1 Call K with T2
-   'Straddle', #Long 1 call and 1 put with same K
-   'Strangle', #Long 1 put K1 and 1 call K2, K1<K2
-   'Strip', #Long 1 call, 2 puts with same K
-   'Strap' #Long 2 calls, 1 put with same K
+   #'Covered Call', #Long UL, Short 1 OTM call
+   #'Protective Put', #Long UL, Long 1 OTM put
+   #'Call Spread', #Long 1 Call ITM, short 1 call OTM
+   #'Put Spread', #Long 1 Put ITM, short 1 call OTM
+   #'Box Spread', #Long 1 Call Spread (K1,K2), Long 1 Put Spread (same K1,K2)
+   #'Butterfly Spread (Calls)', #Long 1 Call K1, Short 2 Call K2, Long 1 Call K3
+   #'Butterfly Spread (Puts)', #Long 1 Put K1, Short 2 Put K2, Long 1 Put K3
+   #'Calendar Spread (Calls)', #Short 1 Call K with T1, Long 1 Call K with T2
+   #'Calendar Spread (Puts)', #Short 1 Put K with T1, Long 1 Call K with T2
+   #'Straddle', #Long 1 call and 1 put with same K
+   #'Strangle', #Long 1 put K1 and 1 call K2, K1<K2
+   #'Strip', #Long 1 call, 2 puts with same K
+   #'Strap' #Long 2 calls, 1 put with same K
 ]
 with option_strategy:
    strat = st.selectbox('Choose a strategy', strategies)
